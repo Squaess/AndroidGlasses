@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class ProductsActivity extends AppCompatActivity {
 
-    public static final String BASE_URL = "http://192.168.0.14:8080/";
+    private static final String BASE_URL = "http://192.168.0.14:8080/";
 
     ListView listView;
     ArrayList<ItemModel> mArray;

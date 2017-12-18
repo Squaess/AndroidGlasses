@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal">
+
+    <ImageView
+    android:layout_width="0px"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:background="@mipmap/ic_launcher"
+    android:id="@+id/item_picture"/>
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:text="Nazwa"
+            android:layout_weight="1"
+            android:id="@+id/item_name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:text="Korekcja"
+            android:layout_weight="1"
+            android:id="@+id/correction"/>
+    </LinearLayout>
+
+    <TextView
+    android:layout_width="0px"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:textSize="15sp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp"
+    android:textColor="@color/colorPrimary"
+    android:id="@+id/item_price"
+    android:text="Cena"/>
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:id="@+id/delete_icon"
+            android:background="@drawable/ic_launcher_background"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:id="@+id/information_icon"
+            android:background="@mipmap/ic_launcher"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
