@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.squaess.androidglasses.DetailsActivity">
 
-</android.support.constraint.ConstraintLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/detail_image"/>
+
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/detail_name"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:textSize="27sp"
+        android:gravity="center"
+        android:id="@+id/detail_price"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:textSize="23sp"
+        android:gravity="center"
+        android:id="@+id/detail_correction"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>
+
+    <com.varunest.sparkbutton.SparkButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:sparkbutton_activeImage = "@drawable/ic_launcher_background"
+        app:sparkbutton_inActiveImage = "@drawable/rounded_corner"
+        app:sparkbutton_iconSize = "40dp"
+        app:sparkbutton_primaryColor = "@color/colorPrimary"
+        app:sparkbutton_secondaryColor = "@color/spark_secondary_color"/>
+
+
+
+
+</RelativeLayout>
